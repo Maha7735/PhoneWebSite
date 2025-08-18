@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Tajawal", serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    padding: 0 5rem;
+    height: 10vh;
+    margin: 0 auto;
+}
+nav .fa-bars{
+    display: none;
+}
+nav .logo {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+nav .logo i {
+    color:chocolate;
+    padding-right: 0.75rem;
+}
+nav .logo h4 {
+    font-family: "Lalezar", serif;
+    padding-top: 0.50rem;
+}
+nav .nav-items {
+    display: flex;
+    list-style-type: none;
+}
+nav .nav-items .nav-item {
+    padding: 0 1rem;
+}
+nav .nav-link {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    font-size: 1.4rem;
+}
+nav .nav-link:hover {
+    color:chocolate;
+}
+.hero {
+    background-color: #f8f7fc;
+}
+.hero-section {
+    max-width: 1366px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.hero-section .content {
+    display: flex;
+    flex-direction: column;
+}
+.hero-section .content h4 {
+    color: chocolate;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.hero-section .content h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.hero-section .content p {
+    color: rgb(29, 29, 29);
+    font-size: 1.4rem;
+}
+.hero-section .content p span {
+    color: chocolate;
+}
+.btn {
+    width: 10rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background-color: chocolate;
+}
+.btn:hover {
+    background-color: rgb(204, 119, 58);
+}
+.btn a{
+    text-decoration: none;
+    color: #f8f7fc;
+    font-size: 1.3rem;
+}
+/* features section */
+section.features {
+    padding: 2rem 0;
+    background-color: #f8f7fc;
+}
+section.features .features-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.features-section h4 {
+    color: chocolate;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.features-section .qualities {
+    display: flex;
+    justify-content: space-between;
+}
+.features-section .qualities .quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.features-section .qualities .quality:hover{
+    border: 2px solid rgb(210, 105, 30);
+}
+.qualities .quality i{
+    font-size: 2rem;
+    color: chocolate;
+    margin-bottom: 1erm;
+}
+.qualities .quality h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.qualities .quality p{
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgb(29, 29, 29);
+}
+.newst-phones {
+    padding-top: 5rem;
+}
+.newst-phones .phones-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.phones-section h4 {
+    color: chocolate;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.phones-section .phones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+}
+.phones .phone {
+    margin: 2rem 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phone img {
+    margin-bottom: 1rem;
+}
+.phone img:hover{
+    scale: 1.1;
+}
+.phone h3 {
+    font-size: 1.6rem;
+}
+.phones-section button {
+    width: 15rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+.footer {
+    background-color: #f8f7fc;
+    height: 15vh;
+    margin-top: 5rem;
+    padding: 2rem 0;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.footer-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.footer-section .socials {
+    margin-bottom: 1rem;
+}
+.footer-section .socials i {
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+}
+.footer-section .socials i:hover{
+    color: chocolate;
+    cursor: pointer;
+}
+/* responsive design */
+@media (max-width: 1400px){
+    * {
+        font-size: 85%;
+    }
+}
+@media (max-width: 1170px){
+    * {
+        font-size: 80%;
+    }
+}
+@media (max-width: 1000px){
+    * {
+        text-align: center;
+    }
+    .hero img {
+        display: none;
+    }
+    .hero-section{
+        align-items: center;
+        padding: 2rem 0;
+        width: 50%;
+    }
+    .hero .btn {
+        align-self: center;
+    }
+    .features-section .qualities{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.features .features-section{
+        align-items: center;
+    }
+    .hero-section{
+        height: 70vh;
+    }
+}
+@media (max-width: 840px){
+    .hero-section .content h1 {
+        font-size: 2rem;
+    }
+    .phones-section .phones {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 510px){
+    .phones-section .phones {
+        grid-template-columns: 1fr;
+        align-self: center;
+    }
+    nav{
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    nav .fa-bars{
+        display: block;
+        font-size: 3rem;
+    }
+    nav .nav-items{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 10vh;
+        flex-direction: column;
+        width: 100%;
+        background-color: chocolate;
+        padding: 2rem 0;
+    }
+    nav .nav-items.active{
+        display: flex;
+    }
+    nav .nav-items .nav-item{
+        margin: 1rem 0;
+    }
+    nav .nav-items .nav-item a{
+        color: #fff;
+    }
+}
